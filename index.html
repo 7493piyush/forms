@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2f6a7395d9.js" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="./index.js"></script>
+    <title>Forms</title>
+</head>
+
+<body>
+    <div class="container p-3" ><br>
+        <h1 class="text-success text-center">forms validation</h1><br>
+        <div class="col-lg-12 m-auto d-block">
+            <form action="#" onsubmit="return validation()" autocomplete="off">
+
+                <div class="form-group text-center">
+                    <label for="user">Username</label>
+                    <input class="form-control text-center" type="text" placeholder="username" id="user" >
+                    <span id="username" class="text-danger font-weight-bold"></span>
+                </div>
+                <div class="form-group text-center">
+                    <label for="pass">Password</label>
+                    <input class="form-control text-center" type="password" placeholder="password" id="pass" >
+                    <span id="password" class="text-danger font-weight-bold"></span>
+                </div>
+                <div class="form-group text-center">
+                    <label for="conpass">Confirm Password</label>
+                    <input class="form-control text-center" type="password" placeholder="Confirm Password" id="conpass" >
+                    <span id="confirmpass" class="text-danger font-weight-bold"></span>
+                </div>
+                <div class="form-group text-center">
+                    <label for="email">Email</label>
+                    <input class="form-control text-center" type="text" placeholder="email" id="email" >
+                    <span id="emails" class="text-danger font-weight-bold"></span>
+                </div>
+                <button type="submit" class="btn btn-success text-center">Submit</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
